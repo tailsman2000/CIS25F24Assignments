@@ -6,8 +6,8 @@ int main()
 {
     // Declaring Total Sales Made, Tax Rate, and how much will be taxed
     double totalSales =  95000;
-    double countyTaxRate = 0.02;
-    double estateTaxRate = 0.04;
+    const double countyTaxRate = 0.02;
+    const double estateTaxRate = 0.04;
     // Calculating the amount needed to pay, then adding the values
     double countyTax = totalSales * countyTaxRate;
     double estateTax = totalSales * estateTaxRate;
