@@ -1,4 +1,3 @@
-// Customer.cpp
 #include "Customer.hpp"
 #include <iostream>
 
