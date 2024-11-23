@@ -1,23 +1,5 @@
 #include <iostream>
-#include <string>
-
-class TextBox {
-private:
-    std::string value;
-
-public:
-    TextBox() : value("") {}
-
-    explicit TextBox(const std::string& initialValue) : value(initialValue) {}
-
-    std::string getValue() const {
-        return value;
-    }
-
-    void setValue(const std::string& newValue) {
-        value = newValue;
-    }
-};
+#include "TextBox.hpp"
 
 int main() {
     TextBox defaultTextBox;
