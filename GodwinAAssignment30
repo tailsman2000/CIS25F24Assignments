@@ -1,0 +1,33 @@
+#include <iostream>
+#include <string>
+
+class TextBox {
+private:
+    std::string value;
+
+public:
+    TextBox() : value("") {}
+
+    explicit TextBox(const std::string& initialValue) : value(initialValue) {}
+
+    std::string getValue() const {
+        return value;
+    }
+
+    void setValue(const std::string& newValue) {
+        value = newValue;
+    }
+};
+
+int main() {
+    TextBox defaultTextBox;
+    std::cout << "Default TextBox value: " << defaultTextBox.getValue() << std::endl;
+
+    TextBox customTextBox("Hello, World!");
+    std::cout << "Custom TextBox value: " << customTextBox.getValue() << std::endl;
+
+    customTextBox.setValue("Updated Value");
+    std::cout << "Updated TextBox value: " << customTextBox.getValue() << std::endl;
+
+    return 0;
+}
